@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes rgbWaves {
+    0% {
+        box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.8), 0 0 40px 10px rgba(255, 0, 0, 0.6), 0 0 60px 15px rgba(255, 0, 0, 0.4);
+    }
+    25% {
+        box-shadow: 0 0 30px 5px rgba(0, 255, 0, 0.8), 0 0 60px 10px rgba(0, 255, 0, 0.6), 0 0 90px 15px rgba(0, 255, 0, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 20px 5px rgba(0, 0, 255, 0.8), 0 0 40px 10px rgba(0, 0, 255, 0.6), 0 0 60px 15px rgba(0, 0, 255, 0.4);
+    }
+    75% {
+        box-shadow: 0 0 30px 5px rgba(255, 0, 0, 0.8), 0 0 60px 10px rgba(255, 0, 0, 0.6), 0 0 90px 15px rgba(255, 0, 0, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.8), 0 0 40px 10px rgba(0, 255, 0, 0.6), 0 0 60px 15px rgba(0, 255, 0, 0.4);
+    }
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    animation: rgbWaves 5s linear infinite;
+    text-align: center;
+    position: relative;
+}
+
+.hover-message {
+    display: none;
+    margin-top: 20px;
+    color: #333;
+}
+
+.card:hover .hover-message {
+    display: block;
+}
