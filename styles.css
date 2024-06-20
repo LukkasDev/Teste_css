@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000; /* Cor de fundo da página */
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background-color: #fff; /* Cor de fundo do card */
+    color: #333; /* Cor do texto dentro do card */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; /* Ajuste conforme necessário */
+    margin-top: 50px; /* Espaçamento acima do card */
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#nao {
+    position: absolute;
+}
